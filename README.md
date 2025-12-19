@@ -4,9 +4,9 @@
 
 CFLRU 是一種針對快閃記憶體 (Flash Memory) 最佳化的快取演算法，旨在透過優先驅逐乾淨頁面 (Clean Pages) 來減少昂貴的寫入操作 (Flash Writes)。
 
-##  我的職責與貢獻 (My Contributions)
+##  職責與貢獻 (My Contributions)
 
-在本次分組作業中，我主要負責以下項目：
+在本次分組作業中，主要負責以下項目：
 
 1.  **CFLRU 演算法開發 (`algorithm/cflru.py`)**：
 
