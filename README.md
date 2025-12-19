@@ -1,10 +1,10 @@
-# 🚀 CFLRU Page Replacement Algorithm
+#  CFLRU Page Replacement Algorithm
 
 這是一個關於 **CFLRU (Clean-First LRU)** 頁面置換演算法的實作專案。本專案為分組作業，此 Repository 包含了我負責實作的 **CFLRU 演算法核心** 以及使用團隊開發的模擬框架所進行的**實驗數據產出**。
 
 CFLRU 是一種針對快閃記憶體 (Flash Memory) 最佳化的快取演算法，旨在透過優先驅逐乾淨頁面 (Clean Pages) 來減少昂貴的寫入操作 (Flash Writes)。
 
-## 👨‍💻 我的職責與貢獻 (My Contributions)
+##  我的職責與貢獻 (My Contributions)
 
 在本次分組作業中，我主要負責以下項目：
 
@@ -19,7 +19,7 @@ CFLRU 是一種針對快閃記憶體 (Flash Memory) 最佳化的快取演算法�
       * 利用組員提供的測試框架 (`simulate_framework.py`) 執行大規模模擬。
       * 分析 Total Cost、Flash Writes 次數與 Miss Rate等等。
 
-## 📂 檔案結構 (File Structure)
+##  檔案結構 (File Structure)
 
 ```text
 CFLRU/
@@ -34,7 +34,7 @@ CFLRU/
 └── clean_spc.py             # [Tool] SPC 格式轉換工具
 ```
 
-## 🧠 演算法實作細節 (Algorithm Implementation)
+##  演算法實作細節 (Algorithm Implementation)
 
 我在 `algorithm/cflru.py` 中實作了以下機制：
 
@@ -53,7 +53,7 @@ CFLRU/
   * **成本函數**：計算 `Cost = Read_Miss + 8 * Write_Eviction`。
   * **爬山演算法**：比較當前週期與上一週期的 Cost，若成本上升，則反轉 Window Size 的調整方向（擴大或縮小），自動尋找最佳參數。
 
-## 🛠️ 執行實驗 (Running Simulations)
+##  執行實驗 (Running Simulations)
 
 我使用 `simulate_framework.py` 來驗證演算法效能。
 
